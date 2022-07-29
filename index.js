@@ -1,5 +1,5 @@
 setInterval(()=>{
-       d=new Date();
+       d=new Date();/*it creates new date object with current browser's date and time*/
        htime=d.getHours();
        mtime=d.getMinutes();
        stime=d.getSeconds();

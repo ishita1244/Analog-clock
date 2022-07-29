@@ -1,36 +1,40 @@
 #clockContainer{
-    position: relative;
+    position: relative;/*positioned relative to its normal position*/
     margin: auto;
-    border: 2px solid red;
-    height: 40vw;
+    border: 2px solid black;
+    height: 40vw;/* vw means view port.View port ki jitni height h uska 40% */
     width: 40vw;
     background: url(clock.png) no-repeat;
-    background-size: 100%;
+    background-size: 100%;/*clock in centre */
 
 }
+
 #hour,#minute,#second{
-     position: absolute;
+     position: absolute;/*fixed position,positioned relative to nearest positioned ancestor */
      background-color: black;
      border-radius: 10px;
-     transform-origin: bottom;
+     transform-origin: bottom;/*every hand should get rotated from bottom*/
 }
  #hour{
     width: 1.5%;
     height: 25%;
     top: 25%;
-    left: 49.5%;
+    left: 50%;
+    
 } 
  #minute{
     width: 1%;
-    height: 39.5%;
-    top: 9%;
-    left: 49.5%;
+    height: 40.5%;
+    top: 9.5%;
+    left: 50%;
     opacity: 0.8;
+   
 }  
  #second{
     width: 0.5%;
-    height: 37%;
-    top: 11%;
+    height: 35%;
+    top: 14.5%;
     left: 49.5%;
     opacity: 0.8;
+   
  }
